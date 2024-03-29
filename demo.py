@@ -45,8 +45,3 @@ class ClassUser():
                 print("This password is strong.")
             else:
                 print("INVALID: Password as to need at least one upper/lower Characters")
-
-
-        
-            
-password_Strenght_Validtion(usr)
