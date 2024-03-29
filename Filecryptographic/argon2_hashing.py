@@ -18,7 +18,7 @@ def get_user_passphrase():
     )
     
     hashed_passphrase = base64.urlsafe_b64encode(kdf.derive(user_entered_passphrase))
-    print(hashed_passphrase)
+    # print(hashed_passphrase)
     
     return hashed_passphrase
     
