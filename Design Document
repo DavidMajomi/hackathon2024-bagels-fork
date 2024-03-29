@@ -1,0 +1,31 @@
+##### Levels of Checking ######
+1.) Length
+2.) Mixed Case (upper or lower case)
+3.) Presence of numbers
+
+
+# // 3.) Special Characters (maybe non alphanumeric characters)
+
+##### Features ######
+    ##### Strength Level of Password ####
+    
+    1.) The number of characters at each level helps determine the strength of the Password
+    2.) The Length of the Password  must be above a minimum threshold which is = "to this" but must be above the maximum threshold = 26
+
+        #### Actual Scoring could be done using a weighting system
+        1.) Create a weight for each metric
+        2.) Weigh the password 
+        3.) Weigh a sample best possible password
+        4.) Weigh a sample worst possible password
+        5.) Normalize the score using both the best possible and worst possible score.
+
+
+    ##### Failure Message reporting #####
+    1.) A list contain resons for error messages is returned and itereated through to show reasons why a Password is weak.
+
+    ##### An estimate on how long it will take to crack provided Password
+    1.) Done using discrete math
+
+    #### Database of passwords ####
+    1.) username
+    2.) passwords
