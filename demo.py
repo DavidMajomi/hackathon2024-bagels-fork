@@ -32,6 +32,7 @@ class ClassUser():
         
         if (len(self.password)<4) or (len(self.password)>26):
             print("INVALID: Password is to long/shrot password should be in between 4 - 26 Characters")
+            return False
         else:
             print("VALID: Password is in between 4 - 26 Characters")
             for i in range(len(self.password)):
@@ -44,6 +45,7 @@ class ClassUser():
 
             if  (self.spCha < 2) or (self.spCha > 26):
                 print("INVALID: Password as to many/little special Characters it should be in between 2 - 26 Characters.")
+                return False
             else:
                 print("VALID: Password special Characters are in between 2 - 26 Characters.")
             
@@ -51,6 +53,7 @@ class ClassUser():
                 print("This password is strong.")
             else:
                 print("INVALID: Password as to need at least one upper/lower Characters")
+                return False
 
     
     def test_crack(self):
