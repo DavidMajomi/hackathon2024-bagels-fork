@@ -1,4 +1,3 @@
-# from Crypto.cipher import AES
 import argon2
 
 def get_user_passphrase():
