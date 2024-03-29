@@ -19,22 +19,21 @@ class ClassUser():
         self.username = Username
         self.password = Password
     def getUsername(self):
-        return self.Username
+        return self.username
     def getPassword(self):
-        return self.Password
+        return self.password
     def password_Strenght_Validtion(self):
         spCha = 0
         upAphlCha = 0
         loAphlCha = 0
-        print(len(self.Password))
-        if (len(self.Password)<4) or (len(self.Password)>26):
+        if (len(self.password)<4) or (len(self.password)>26):
             print("INVALID: Password is to long/shrot password should be in between 4 - 26 Characters")
         else:
             print("VALID: Password is in between 4 - 26 Characters")
-            for i in range(len(self.Password)):
-                if ((ord(self.Password[i])>=32) and (ord(self.Password[i])<=64)) or ((ord(self.Password[i])>=91) and (ord(self.Password[i])<=96)) or ((ord(self.Password[i])>=123) and (ord(self.Password[i])<=126)):
+            for i in range(len(self.password)):
+                if ((ord(self.password[i])>=32) and (ord(self.password[i])<=64)) or ((ord(self.password[i])>=91) and (ord(self.password[i])<=96)) or ((ord(self.password[i])>=123) and (ord(self.password[i])<=126)):
                     spCha +=1
-                elif ((ord(self.Password[i])>=65) and (ord(self.Password[i])<=90)):
+                elif ((ord(self.password[i])>=65) and (ord(self.password[i])<=90)):
                     upAphlCha +=1
                 else:
                     loAphlCha +=1
