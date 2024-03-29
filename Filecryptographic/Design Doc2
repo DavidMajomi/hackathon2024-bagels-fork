@@ -1,0 +1,5 @@
+Using pythons cryptography library we implemented Fernet cryptography
+The Fernet implementation allows for the ability to encrypt and decrypt by using a simple passphrase through KDA
+    This is implemented in argon2_hashing.py
+File encryption and decrytion is then done using the created data block from user input passphrase
+Encrypted files and decrypted files overrride original file
