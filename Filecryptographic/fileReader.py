@@ -36,5 +36,11 @@ token = f.encrypt(b"A really secret message. Not for prying eyes.")
 print(token)
 
 
-#with open() as enc_file:
+with open(name, 'rb') as enc_file:
+    encrypted_file = enc_file.read()
+decrypted_file = fernet.decrypt(encrypted_file)
+
+with open(name, "wb") as enc_file:
+    dec_file.write(decrypted_file)
+
     
