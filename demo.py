@@ -18,7 +18,10 @@ class ClassUser():
     def __init__(Username,Password):
         self.Username = Username
         self.Password = Password
-        
+    def getUsername():
+        return self.Username
+    def getPassword():
+        return self.Password
     def password_Strenght_Validtion():
         spCha = 0
         upAphlCha = 0
