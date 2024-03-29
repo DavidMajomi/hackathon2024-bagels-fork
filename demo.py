@@ -15,14 +15,14 @@ usr = input()
 #    print(f"{usr[i]} = {ord(usr[i])}")
 
 class ClassUser():
-    def __init__(Username,Password):
-        self.Username = Username
-        self.Password = Password
-    def getUsername():
+    def __init__(self, Username,Password):
+        self.username = Username
+        self.password = Password
+    def getUsername(self):
         return self.Username
-    def getPassword():
+    def getPassword(self):
         return self.Password
-    def password_Strenght_Validtion():
+    def password_Strenght_Validtion(self):
         spCha = 0
         upAphlCha = 0
         loAphlCha = 0
@@ -48,3 +48,4 @@ class ClassUser():
                 print("This password is strong.")
             else:
                 print("INVALID: Password as to need at least one upper/lower Characters")
+
