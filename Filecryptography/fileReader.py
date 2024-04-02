@@ -1,5 +1,5 @@
 from cryptography.fernet import Fernet
-from argon2_hashing import get_user_passphrase
+from fernet_hashing import get_user_passphrase
 passphrase = get_user_passphrase()
 f = Fernet(passphrase)
 def read_Userfile(fileName):
@@ -13,15 +13,6 @@ def read_Userfile(fileName):
 
 name = "test.txt"
 read_Userfile(name)
-
-#import aes_cipher
-
-#Pbkdf2Sha512Default = aes_cipher.Pbkdf2Sha512(512 * 1024)
-#data = "asfdfasdggasdffasDas"
-#hi=aes_cipher.DataEncrypter(Pbkdf2Sha512Default)
-#hi.Encrypt(data,"test_pwd")
-
-#print(hi.GetEncryptedData())
 
 
 def decode_Userfile(fileName):
